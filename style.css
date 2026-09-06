@@ -1,0 +1,308 @@
+:root{
+    --bg-dark: #1c2128;
+    --bg-darker: #171a20;
+    --accent-blue: #4aa3e0;
+    --text-light: #e9edf1;
+    --text-muted: #b7bfc7;
+  }
+  body{
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+    font-family: 'Poppins', sans-serif;
+  }
+  .navbar{
+    background-color: var(--bg-darker);
+    padding: 1rem 2rem;
+  }
+  .navbar-brand .logo-letter{
+    font-size: 2rem;
+    font-weight: 800;
+    color: transparent;
+    -webkit-text-stroke: 2px var(--accent-blue);
+  }
+  .nav-link{
+    color: var(--text-light) !important;
+    font-weight: 600;
+    margin: 0 0.75rem;
+  }
+  .nav-link.active{
+    color: var(--accent-blue) !important;
+  }
+  .btn-resume{
+    background-color: var(--accent-blue);
+    color: #fff;
+    font-weight: 600;
+    border-radius: 6px;
+    padding: 0.5rem 1.25rem;
+    border: none;
+  }
+  .btn-resume:hover{
+    background-color: #3a8fcc;
+    color: #fff;
+  }
+  .hero-section{
+    padding: 5rem 2rem;
+    min-height: 90vh;
+  }
+  .hi-text{
+    color: var(--accent-blue);
+    font-size: 2.75rem;
+    font-weight: 700;
+  }
+  .name-text{
+    color: var(--accent-blue);
+    font-size: 3.5rem;
+    font-weight: 800;
+    line-height: 1.1;
+  }
+  .role-text{
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--text-light);
+    margin-top: 1rem;
+  }
+  .desc-text{
+    color: var(--text-muted);
+    font-size: 1.05rem;
+    max-width: 600px;
+    margin-top: 1.5rem;
+  }
+  .email-text{
+    color: #e05c5c;
+    font-weight: 500;
+    margin-top: 1rem;
+    display: inline-block;
+  }
+  .social-icons a{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background-color: var(--accent-blue);
+    color: #fff;
+    margin-right: 0.75rem;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: transform 0.2s ease;
+  }
+  .social-icons a:hover{
+    transform: translateY(-3px);
+  }
+  .profile-img-wrap{
+    height: 100%;
+    display: flex;
+    align-items: stretch;
+  }
+  .profile-img-wrap img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  @media (max-width: 991px){
+    .name-text{ font-size: 2.5rem; }
+    .hi-text{ font-size: 2rem; }
+    .profile-img-wrap{ margin-top: 2rem; height: 350px; }
+  }
+
+  /* Portfolio section */
+  .portfolio-section{
+    padding: 2rem 2rem 5rem;
+  }
+  .section-title{
+    font-size: 2.75rem;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  .project-card{
+    background-color: #0f1216;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 2.5rem;
+  }
+  .project-shot{
+    background-color: #eef0f2;
+    padding: 1.25rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .project-shot img{
+    width: 100%;
+    border-radius: 4px;
+  }
+  .project-info{
+    padding: 2.25rem 2.5rem;
+  }
+  .project-title{
+    color: var(--accent-blue);
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-bottom: 1.25rem;
+  }
+  .project-desc{
+    color: var(--text-light);
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 1.25rem;
+  }
+  .project-list{
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1.75rem;
+  }
+  .project-list li{
+    position: relative;
+    padding-left: 1.25rem;
+    margin-bottom: 0.6rem;
+    color: var(--text-light);
+    line-height: 1.5;
+  }
+  .project-list li::before{
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: var(--text-light);
+  }
+  .tech-badge{
+    display: inline-block;
+    background-color: #4a4f5c;
+    color: var(--text-light);
+    font-weight: 500;
+    padding: 0.45rem 1.1rem;
+    border-radius: 4px;
+    margin: 0 0.6rem 0.6rem 0;
+  }
+  @media (max-width: 991px){
+    .project-info{ padding: 1.75rem; }
+    .section-title{ font-size: 2rem; }
+  }
+
+  /* Skills section */
+  .skills-section{
+    padding: 2rem 2rem 5rem;
+  }
+  .skill-group{
+    margin-bottom: 2.5rem;
+  }
+  .skill-group-title{
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--text-light);
+    margin-bottom: 1.25rem;
+  }
+  .skill-badge{
+    display: inline-block;
+    background-color: #4a4f5c;
+    color: var(--text-light);
+    font-weight: 600;
+    padding: 0.6rem 1.4rem;
+    border-radius: 6px;
+    margin: 0 0.7rem 0.7rem 0;
+  }
+
+  /* Education section */
+  .education-section{
+    padding: 2rem 2rem 5rem;
+  }
+  .edu-title{
+    color: var(--accent-blue);
+    font-size: 2.25rem;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+  }
+  .edu-degree{
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--text-light);
+    margin-bottom: 0.25rem;
+  }
+  .edu-school{
+    font-size: 1.1rem;
+    color: var(--text-muted);
+    margin-bottom: 0.75rem;
+  }
+  .edu-years{
+    font-size: 1rem;
+    color: var(--text-muted);
+  }
+
+  /* Contact section */
+  .contact-section{
+    padding: 2rem 2rem 4rem;
+  }
+  .contact-box{
+    border: 1px solid #4a5058;
+    border-radius: 10px;
+    padding: 3rem;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  .contact-box .form-control{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #6b7178;
+    border-radius: 0;
+    color: var(--text-light);
+    padding: 0.75rem 0.25rem;
+    margin-bottom: 2.5rem;
+  }
+  .contact-box .form-control::placeholder{
+    color: var(--text-muted);
+  }
+  .contact-box .form-control:focus{
+    background-color: transparent;
+    color: var(--text-light);
+    box-shadow: none;
+    border-bottom-color: var(--accent-blue);
+  }
+  .btn-send{
+    background-color: #d7dbe2;
+    color: var(--accent-blue);
+    font-weight: 700;
+    padding: 0.75rem;
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+  }
+  .btn-send:hover{
+    background-color: #c3c8d1;
+    color: var(--accent-blue);
+  }
+
+  /* Footer */
+  .site-footer{
+    text-align: center;
+    padding: 2rem 1rem 3rem;
+    color: var(--text-light);
+  }
+  .footer-email{
+    color: #e05c5c;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  .footer-copy{
+    font-weight: 600;
+    margin-top: 1rem;
+  }
+  .footer-location{
+    color: var(--text-muted);
+    margin-top: 0.5rem;
+  }
+  .footer-icons a{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background-color: var(--accent-blue);
+    color: #fff;
+    margin: 1.25rem 0.4rem 0;
+    font-size: 1.2rem;
+    text-decoration: none;
+  }
